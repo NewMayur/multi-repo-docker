@@ -19,7 +19,7 @@ services:
       - BRANCH=hello-world-2
       - PORT=5005
     ports:
-      - "5005:5000"
+      - "5005:5005"
 
   hello-world-3:
     build:
@@ -29,4 +29,4 @@ services:
       - BRANCH=hello-world-3
       - PORT=5007
     ports:
-      - "5007:5000"
+      - "5007:5007"
