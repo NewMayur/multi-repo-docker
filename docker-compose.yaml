@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  hello-guest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BRANCH=hello_world_1
+      - PORT=5000
+    ports:
+      - "5000:5000"
+
+  hello-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BRANCH=hello_world_2
+      - PORT=5005
+    ports:
+      - "5005:5005"
+
+  hello-qa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BRANCH=hello_world_3
+      - PORT=5007
+    ports:
+      - "5007:5007"
