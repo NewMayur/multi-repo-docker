@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - BRANCH=hello_world_1
+      - BRANCH=hello-world-1
       - PORT=5000
     ports:
       - "5000:5000"
@@ -16,7 +16,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - BRANCH=hello_world_2
+      - BRANCH=hello-world-2
       - PORT=5005
     ports:
       - "5005:5005"
@@ -26,7 +26,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - BRANCH=hello_world_3
+      - BRANCH=hello-world-3
       - PORT=5007
     ports:
       - "5007:5007"
